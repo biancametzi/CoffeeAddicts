@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="company_name_layout_marginTop">17dp</dimen>
+    <dimen name="company_name_layout_marginBottom">15dp</dimen>
+    <dimen name="slogan_layout_marginLeft">10dp</dimen>
+    <dimen name="description_layout_marginLeft">10dp</dimen>
+    <dimen name="working_hours_layout_marginLeft">10dp</dimen>
+    <dimen name="working_hours_2_layout_marginLeft">30dp</dimen>
+    <dimen name="layout_marginRight">5dp</dimen>
+    <dimen name="layout_marginBottom">15dp</dimen>
+    <dimen name="layout_appBottom">10dp</dimen>
+    <dimen name="drawablePadding">5dp</dimen>
+
+</resources>
+
