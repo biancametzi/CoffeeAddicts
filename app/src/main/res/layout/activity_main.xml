@@ -1,100 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    tools:context="com.example.android.coffeeaddicts.MainActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ImageView
+        android:id="@+id/coffeeAddictsImage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:configChanges="orientation|screenSize"
-        tools:context="com.example.android.coffeeaddicts.MainActivity">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coffee_addicts" />
 
-        <ImageView
-            android:id="@+id/coffeeAddictsImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="false"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:src="@drawable/coffee_addicts" />
+    <TextView
+        android:id="@+id/businessName"
+        style="@style/CompanyName"
+        android:layout_below="@id/coffeeAddictsImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/company_name_layout_marginBottom"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        android:layout_marginTop="@dimen/company_name_layout_marginTop"
+        android:text="@string/coffee_addicts" />
 
-        <TextView
-            android:id="@+id/businessName"
-            style="@style/CompanyName"
-            android:layout_below="@id/coffeeAddictsImage"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="@dimen/company_name_layout_marginBottom"
-            android:layout_marginRight="@dimen/layout_marginRight"
-            android:layout_marginTop="@dimen/company_name_layout_marginTop"
-            android:text="@string/coffee_addicts" />
+    <TextView
+        android:id="@+id/slogan"
+        style="@style/Slogan"
+        android:layout_below="@id/businessName"
+        android:layout_marginBottom="@dimen/layout_marginBottom"
+        android:layout_marginLeft="@dimen/slogan_layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        android:text="@string/slogan" />
 
-        <TextView
-            android:id="@+id/slogan"
-            style="@style/Slogan"
-            android:layout_below="@id/businessName"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="@dimen/slogan_layout_marginLeft"
-            android:layout_marginRight="@dimen/layout_marginRight"
-            android:text="@string/slogan" />
+    <TextView
+        android:id="@+id/description"
+        style="@style/MyTextAppearance"
+        android:layout_below="@id/slogan"
+        android:layout_marginBottom="@dimen/layout_marginBottom"
+        android:layout_marginLeft="@dimen/description_layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        android:text="@string/description" />
 
-        <TextView
-            android:id="@+id/description"
-            style="@style/MyTextAppearance"
-            android:layout_below="@id/slogan"
-            android:layout_marginBottom="@dimen/layout_marginBottom"
-            android:layout_marginLeft="@dimen/description_layout_marginLeft"
-            android:layout_marginRight="@dimen/layout_marginRight"
-            android:text="@string/description" />
+    <TextView
+        android:id="@+id/workingHours"
+        style="@style/MyTextAppearance"
+        android:layout_below="@id/description"
+        android:layout_marginLeft="@dimen/working_hours_layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
+        android:text="@string/working_hours" />
 
-        <TextView
-            android:id="@+id/workingHours"
-            style="@style/MyTextAppearance"
-            android:layout_below="@id/description"
-            android:layout_marginLeft="@dimen/working_hours_layout_marginLeft"
-            android:layout_marginRight="@dimen/layout_marginRight"
-            android:text="@string/working_hours" />
+    <TextView
+        android:id="@+id/workingHours2"
+        style="@style/MyTextAppearance"
+        android:layout_below="@id/workingHours"
+        android:layout_marginLeft="@dimen/working_hours_2_layout_marginLeft"
+        android:text="@string/working_hours_2" />
 
-        <TextView
-            android:id="@+id/workingHours2"
-            style="@style/MyTextAppearance"
-            android:layout_below="@id/workingHours"
-            android:layout_marginLeft="@dimen/working_hours_2_layout_marginLeft"
-            android:text="@string/working_hours_2" />
+    <TextView
+        android:id="@+id/phoneNumber"
+        style="@style/ContactInfo"
+        android:layout_above="@id/facebookPage"
+        android:autoLink="phone"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableStart="@drawable/phone"
+        android:text="@string/phone_number"
+        android:textColorLink="#000000" />
 
-        <TextView
-            android:id="@+id/phoneNumber"
-            style="@style/ContactInfo"
-            android:layout_above="@id/address"
-            android:autoLink="phone"
-            android:drawableLeft="@drawable/phone"
-            android:drawablePadding="@dimen/drawablePadding"
-            android:drawableStart="@drawable/phone"
-            android:text="@string/phone_number" />
+    <TextView
+        android:id="@+id/facebookPage"
+        style="@style/ContactInfo"
+        android:layout_above="@id/address"
+        android:layout_marginTop="@dimen/contact_info_layout_marginTop"
+        android:autoLink="web"
+        android:drawableLeft="@drawable/facebook"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableStart="@drawable/facebook"
+        android:text="@string/facebook_page"
+        android:textColorLink="#000000" />
 
-        <TextView
-            android:id="@+id/address"
-            style="@style/ContactInfo"
-            android:layout_above="@id/facebookPage"
-            android:autoLink="map"
-            android:drawableLeft="@drawable/location"
-            android:drawablePadding="@dimen/drawablePadding"
-            android:drawableStart="@drawable/location"
-            android:text="@string/address" />
+    <TextView
+        android:id="@+id/address"
+        style="@style/ContactInfo"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/layout_appBottom"
+        android:layout_marginTop="@dimen/contact_info_layout_marginTop"
+        android:autoLink="map"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="@dimen/drawablePadding"
+        android:drawableStart="@drawable/location"
+        android:text="@string/address" />
 
-        <TextView
-            android:id="@+id/facebookPage"
-            style="@style/ContactInfo"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/layout_appBottom"
-            android:autoLink="web"
-            android:drawableLeft="@drawable/facebook"
-            android:drawablePadding="@dimen/drawablePadding"
-            android:drawableStart="@drawable/facebook"
-            android:text="@string/facebook_page"
-            android:textColorLink="#000000" />
-
-    </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

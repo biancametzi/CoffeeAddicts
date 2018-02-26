@@ -11,7 +11,7 @@
     <dimen name="layout_marginRight">5dp</dimen>
     <dimen name="layout_marginBottom">15dp</dimen>
     <dimen name="layout_appBottom">10dp</dimen>
+    <dimen name="contact_info_layout_marginTop">3dp</dimen>
     <dimen name="drawablePadding">5dp</dimen>
 
 </resources>
-
